@@ -7,7 +7,7 @@ WORKDIR /app
 # Set environment variables to disable prompt during package installation and set the timezone
 ENV DEBIAN_FRONTEND=noninteractive
 ENV TZ=Europe/Warsaw
-ENV MAKEFLAGS=-j
+#ENV MAKEFLAGS=-j
 
 # Install any needed packages specified in requirements.txt
 RUN apt update &&  apt install software-properties-common -y --no-install-recommends  && add-apt-repository ppa:bitcoin/bitcoin
