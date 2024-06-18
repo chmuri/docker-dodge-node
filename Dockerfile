@@ -12,7 +12,7 @@ ENV TZ=Europe/Warsaw
 # Install any needed packages specified in requirements.txt
 RUN apt update &&  apt install software-properties-common -y --no-install-recommends  && add-apt-repository ppa:bitcoin/bitcoin
 RUN  apt-get update
-RUN  apt-get install libdb4.8-dev libdb4.8++-dev -y --no-install-recommends 
+RUN  apt-get install libdb4.8-dev libdb4.8++-dev  libdb++-dev -y --no-install-recommends 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends git build-essential libtool autotools-dev automake pkg-config bsdmainutils python3 software-properties-common tzdata libboost-all-dev libssl-dev libevent-dev wget libzmq3-dev && \
     apt-get clean && \
