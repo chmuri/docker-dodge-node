@@ -3,7 +3,7 @@ FROM ubuntu:bionic
 
 # Set the working directory in the container to /app
 WORKDIR /app
-
+ 
 # Set environment variables to disable prompt during package installation and set the timezone
 ENV DEBIAN_FRONTEND=noninteractive
 ENV TZ=Europe/Warsaw
